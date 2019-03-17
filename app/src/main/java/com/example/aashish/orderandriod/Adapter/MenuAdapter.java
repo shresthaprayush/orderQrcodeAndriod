@@ -1,4 +1,4 @@
-package com.example.aashish.orderandriod;
+package com.example.aashish.orderandriod.Adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -9,11 +9,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.aashish.orderandriod.Data.Categorypull;
+import com.example.aashish.orderandriod.R;
+
 import java.util.List;
 
 import retrofit2.Callback;
 
+//Menu Adapter is used to populate the data in card view and show that data in the recycle view.
+
+//This is step 2 passing the class MenuviewHolder as a pramater of MenuAdapter Class.
+
 public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuviewHolder> {
+
+    //This is step 3 Initialize all the necessary variable and create constructer
 
     private List<Categorypull> documentsList;
     private Callback<List<Categorypull>> mContext;
@@ -25,9 +34,12 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuviewHolder
         this.context = context;
     }
 
+
+
     @NonNull
     @Override
     public MenuAdapter.MenuviewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        //Step 4 inflate the card layout
         View view ;
         LayoutInflater layoutInflater = LayoutInflater.from(viewGroup.getContext());
         view = layoutInflater.inflate(R.layout.card_menu,viewGroup,false);
@@ -38,6 +50,8 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuviewHolder
 
     @Override
     public void onBindViewHolder(@NonNull MenuAdapter.MenuviewHolder menuviewHolder, int i) {
+
+        //Step 5 set what you want to get.
 
         final Categorypull categorypull = documentsList.get(i);
        menuviewHolder.Itemname.setText(categorypull.getName());
@@ -50,6 +64,8 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuviewHolder
         return documentsList.size();
     }
 
+
+    // The step no 1 is to create A class to intitialize the card view items.
 
     public class MenuviewHolder extends RecyclerView.ViewHolder{
         CardView cardView;

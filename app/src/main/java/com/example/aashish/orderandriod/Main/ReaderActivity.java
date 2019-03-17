@@ -1,4 +1,4 @@
-package com.example.aashish.orderandriod;
+package com.example.aashish.orderandriod.Main;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.aashish.orderandriod.R;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
@@ -65,8 +66,8 @@ public class ReaderActivity extends AppCompatActivity {
 
 
 
-//                Toast.makeText(this, "id is :" + word[0] , Toast.LENGTH_SHORT).show();              // For spiling of id and table
-//                Toast.makeText(this, "Table number is :" + words[2], Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "id is :" + word[0] , Toast.LENGTH_SHORT).show();              // For spiling of id and table
+                Toast.makeText(this, "Table number is :" + words[2], Toast.LENGTH_SHORT).show();
 
 
 

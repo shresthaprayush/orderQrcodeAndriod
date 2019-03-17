@@ -1,6 +1,10 @@
-package com.example.aashish.orderandriod;
+package com.example.aashish.orderandriod.Data;
+
+//listing all the data that are to be taken by API
 
 public class Categorypull {
+
+    // The name on the api should be same
 
     private String name;
     private String price;
