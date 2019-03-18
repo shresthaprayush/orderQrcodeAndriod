@@ -55,7 +55,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuviewHolder
 
         final Categorypull categorypull = documentsList.get(i);
        menuviewHolder.Itemname.setText(categorypull.getName());
-        menuviewHolder.Price.setText(categorypull.getPrice());
+        menuviewHolder.Price.setText("Rs "+categorypull.getPrice());
 
     }
 

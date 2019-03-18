@@ -12,15 +12,20 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="39dp"
-        android:text="QRcode Scanner"
-        android:textSize="20dp" />
+        android:text="Scan Menu"
+        android:textSize="50dp" />
 
     <Button
         android:id="@+id/scan_btn"
-        android:layout_width="236dp"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_centerInParent="true"
+        android:textSize="60dp"
+        android:foreground="?android:attr/selectableItemBackground"
 
-        android:text="Scan" />
+        android:text="Click"
+
+        android:textColor="#3F51B5"
+        android:background="@drawable/da"/>
 
 </RelativeLayout>

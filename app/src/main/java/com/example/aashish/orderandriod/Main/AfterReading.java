@@ -58,7 +58,7 @@ public class AfterReading extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<List<Categorypull>> call, Throwable t) {
-                Toast.makeText(AfterReading.this,"NOt Working",Toast.LENGTH_SHORT).show();
+                Toast.makeText(AfterReading.this,"Not Working",Toast.LENGTH_SHORT).show();
 
             }
         });
